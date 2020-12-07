@@ -1,0 +1,45 @@
+{
+    "name": "musical",
+    "private": true,
+    "version": "1.0.0",
+    "description": "A simple music bot made using Discord.js",
+    "main": "dist/index.js",
+    "scripts": {
+        "prestart": "npm run build",
+        "start": "node .",
+        "dev": "ts-node --project ./tsconfig.json --files ./src/index.ts",
+        "build": "tsc"
+    },
+    "keywords": [
+        "discord",
+        "music",
+        "bot",
+        "effects"
+    ],
+    "author": "F17",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/opus": "^0.3.3",
+        "dayjs": "^1.9.6",
+        "discord.js": "^12.5.1",
+        "dotenv": "^8.2.0",
+        "ffmpeg-static": "^4.2.7",
+        "fluent-ffmpeg": "^2.1.2",
+        "genius-lyrics": "^4.1.4",
+        "lodash": "^4.17.20",
+        "spotify-url-info": "^2.2.0",
+        "youtube-sr": "^2.0.4",
+        "ytdl-core": "^4.1.2",
+        "ytpl": "^1.0.1"
+    },
+    "devDependencies": {
+        "@types/fluent-ffmpeg": "^2.1.16",
+        "@types/lodash": "^4.14.165",
+        "@types/node": "^14.14.10",
+        "ts-node": "^9.1.0",
+        "typescript": "^4.1.2"
+    },
+    "engines": {
+        "node": ">=12"
+    }
+}
